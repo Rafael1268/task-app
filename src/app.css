@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(34, 34, 34);
+}
+
+* {
+  font-family: Roboto, sans-serif;
+}
+
+#container,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: white;
+  margin: 25px 0;
+}
+
+input,
+button {
+  background-color: rgb(34, 34, 34);
+  border: 2px solid white;
+  border-radius: 10px;
+  font-size: 1.3em;
+  color: white;
+  padding: 5px 10px;
+}
+
+button {
+  font-weight: bold;
+  margin: 25px 0;
+  padding: 7px 40px;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: white;
+  border: 2px solid rgb(34, 34, 34);
+  color: rgb(34, 34, 34);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color:rgb(51, 51, 51);
+  border-radius: 5px;
+  font-size: 1.2em;
+  color: white;
+  margin: 15px 0;
+  padding: 10px 25px;
+  max-width: 80vw;
+  overflow-wrap: break-word;
+}
