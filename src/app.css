@@ -17,7 +17,7 @@ label {
   font-size: 1.8em;
   font-weight: bold;
   color: white;
-  margin: 25px 0;
+  margin:15px 0;
 }
 
 input,
@@ -32,7 +32,7 @@ button {
 
 button {
   font-weight: bold;
-  margin: 25px 0;
+  margin: 15px 0;
   padding: 7px 40px;
   transition: 0.1s;
 }
@@ -57,4 +57,52 @@ li {
   padding: 10px 25px;
   max-width: 80vw;
   overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 1.7em;
+  color: white;
+  margin: 0px;
+}
+
+p {
+  font-size: 1.2em;
+  color: white;
+  margin: 0px 25px;
+}
+
+.buttons h2 {
+  font-size: 1.4em;
+  color: white;
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+#deleteBtn {
+  margin-right: 10px;
+}
+
+#closeEditTaskBtn {
+  margin-left: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.taskDiv {
+  background-color: rgb(51, 51, 51);
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 15px 25px;
+}
+
+.taskEdit {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
