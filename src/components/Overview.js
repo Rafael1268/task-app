@@ -15,12 +15,11 @@ const Overview = ({tasks, deleteTask, editTask, closeEditTask}) => {
                 <h1>{num++}</h1>
                 <p>{task.text}</p>
                 <div className="buttons" id={task.id}>
-                  <h2><FontAwesomeIcon onClick={(Event) => {deleteTask(Event)}} icon={faCircleMinus} id="deleteBtn"/></h2>
-                  <h2><FontAwesomeIcon onClick={(Event) => {editTask(Event)}} icon={faCircleCheck}/></h2>
-                  <h2><FontAwesomeIcon onClick={(Event) => {closeEditTask(Event)}} icon={faCircleXmark} id="closeEditTaskBtn"/></h2>
+                  <h2><FontAwesomeIcon onClick={() => {deleteTask(task.id)}} icon={faCircleMinus} id="deleteBtn"/></h2>
+                  <h2><FontAwesomeIcon onClick={() => {editTask(task.id)}} icon={faCircleCheck}/></h2>
+                  <h2><FontAwesomeIcon onClick={() => {closeEditTask(task.id)}} icon={faCircleXmark} id="closeEditTaskBtn"/></h2>
                 </div>
               </div>
-              {/* <li id={task.id} key={task.id}>{num++} - {task.text} <FontAwesomeIcon onClick={(Event) => {deleteTask(Event)}} icon={faCircleMinus} id="deleteBtn"/></li> */}
               <input type="text" className="taskEdit" id={task.id}></input>
             </div>
           )
@@ -31,11 +30,10 @@ const Overview = ({tasks, deleteTask, editTask, closeEditTask}) => {
                 <h1>{num++}</h1>
                 <p>{task.text}</p>
                 <div className="buttons" id={task.id}>
-                  <h2><FontAwesomeIcon onClick={(Event) => {deleteTask(Event)}} icon={faCircleMinus} id="deleteBtn"/></h2>
-                  <h2><FontAwesomeIcon onClick={(Event) => {editTask(Event)}} icon={faCirclePlus}/></h2>
+                  <h2><FontAwesomeIcon onClick={() => {deleteTask(task.id)}} icon={faCircleMinus} id="deleteBtn"/></h2>
+                  <h2><FontAwesomeIcon onClick={() => {editTask(task.id)}} icon={faCirclePlus}/></h2>
                 </div>
               </div>
-              {/* <li id={task.id} key={task.id}>{num++} - {task.text} <FontAwesomeIcon onClick={(Event) => {deleteTask(Event)}} icon={faCircleMinus} id="deleteBtn"/></li> */}
             </div>
           )
         }
