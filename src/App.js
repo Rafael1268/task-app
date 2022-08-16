@@ -40,7 +40,7 @@ class App extends Component {
 
   formValidation = (e) => {
     e.preventDefault();
-    if (e.target[0].value.length > 1000) {
+    if (e.target[0].value.length > 750) {
       alert('Task is too long!');
     } else if (e.target[0].value.length < 1) {
       alert('Task is too short!');
@@ -64,7 +64,7 @@ class App extends Component {
       tasksCopy[editNum].edit = true;
     } else {
       const inputSelector = document.querySelector(`input#${id}`)
-      if (inputSelector.value > 200) {
+      if (inputSelector.value > 750) {
         return alert('Task is too long!');;
       } else if (inputSelector.value < 1) {
         return alert('Task is too short!');;
